@@ -33,7 +33,7 @@ async def avatar(ctx, user: discord.Member = None):
     await ctx.send(embed=embed)
 
 # Run your bot
-webserver.keepalive
+webserver.keep_alive
 bot.run(TOKEN)
 
 
