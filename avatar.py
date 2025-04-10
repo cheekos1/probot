@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+import webserver
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -32,6 +33,7 @@ async def avatar(ctx, user: discord.Member = None):
     await ctx.send(embed=embed)
 
 # Run your bot
+webserver.keepalive
 bot.run(TOKEN)
 
 
