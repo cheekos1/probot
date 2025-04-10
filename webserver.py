@@ -1,6 +1,6 @@
 from flask import Flask
 from threading import Thread
-app = flask('')
+app = Flask('')
 @app.route('/')
 def home():
     return "am working babe"
